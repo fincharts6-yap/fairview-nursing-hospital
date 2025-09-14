@@ -8,7 +8,7 @@ module.exports = (env, argv) => {
   return {
     entry: './src/index.js',
     output: {
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'build'),
       filename: isProduction ? '[name].[contenthash].js' : 'bundle.js',
       clean: true,
       publicPath: '/',
