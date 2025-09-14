@@ -1,0 +1,42 @@
+{
+  "name": "fairview-hospital-app",
+  "version": "1.0.0",
+  "description": "A modern React application for Fairview Hospital",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "build:analyze": "webpack --mode production --analyze",
+    "serve": "serve -s dist -l 3000",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build && netlify deploy --prod --dir=dist",
+    "preview": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "react",
+    "hospital",
+    "healthcare"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.8.0",
+    "html-webpack-plugin": "^5.5.0",
+    "serve": "^14.2.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.88.0",
+    "webpack-bundle-analyzer": "^4.9.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0"
+  }
+}
